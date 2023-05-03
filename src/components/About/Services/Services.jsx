@@ -1,6 +1,5 @@
 import React from 'react';
-import s from './Services.module.scss'
-import Card from '@/components/Card/Card';
+import s from './Services.module.scss';
 import first from '../../../assets/cards/card1.png'
 import second from '../../../assets/cards/card2.png'
 import third from '../../../assets/cards/card3.png'
@@ -9,6 +8,7 @@ import fifth from '../../../assets/cards/card5.png'
 import sixth from '../../../assets/cards/card6.png'
 import seventh from '../../../assets/cards/card7.png'
 import eighth from '../../../assets/cards/card8.png'
+import Card from '../../Card/Card';
 
 const Services = () => {
     return (
