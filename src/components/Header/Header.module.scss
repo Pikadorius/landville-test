@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #27282D;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(189, 186, 186, 0.1);
+
+  .links {
+    margin: 0 60px 0 auto;
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-align: left;
+
+    &:nth-child(2) {
+      margin: 0 60px;
+    }
+    
+    &:hover {
+      cursor: pointer;
+      color: #264EB4;
+    }
+  }
+}
