@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Header from '../components/Header/Header';
-import About from '../components/About/About';
 import styles from '../styles/Home.module.scss'
+import Greetings from '../components/Greetings/Greetings';
+import Services from '../components/Services/Services';
+import React from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +20,8 @@ export default function Home() {
 
       <main className={styles.main}>
           <Header/>
-          <About/>
+          <Greetings/>
+          <Services/>
       </main>
     </>
   )

@@ -6,10 +6,9 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   cursor: pointer;
   overflow: hidden;
-
 
   .backPic {
     position: absolute;
@@ -36,7 +35,7 @@
   }
 
   .description {
-    margin: 12px 30px 40px;
+    margin: 12px 30px 16px;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
@@ -44,4 +43,68 @@
     text-align: left;
     z-index: 1;
   }
+
+  .link {
+    z-index: 100;
+    margin:16px 30px 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s linear;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    .linkTitle {
+      display: block;
+    }
+
+    .arrow {
+      display: block;
+      width: 14px;
+      height: 2px;
+      position: relative;
+      background-color: white;
+      border-radius: 10px;
+      transition: 0.3s linear;
+
+      &:after {
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+        border-radius: 10px;
+        top: -3px;
+        right: -1px;
+        width: 10px;
+        height: 2px;
+        background-color: white;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        transform: rotate(135deg);
+        border-radius: 10px;
+        top: 3px;
+        right: -1px;
+        width: 10px;
+        height: 2px;
+        background-color: white;
+      }
+    }
+  }
+
+  &:hover .link {
+    transition: 0.3s linear;
+    margin: 16px 30px 40px auto;
+    opacity: 1;
+
+    &:hover .arrow {
+      width: 28px;
+      transition: 0.3s linear;
+    }
+  }
 }
+
