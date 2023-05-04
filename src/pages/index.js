@@ -14,7 +14,7 @@ export default function Home() {
 
     const isModalActive = useSelector(state=>state.modal);
 
-    const content = isModalActive ? `${s.content} ${s.disabled}` : s.content
+    isModalActive ? document.body.style.overflow='hidden' : document.body.style.overflow='auto'
 
     return (
         <>
@@ -25,7 +25,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <div className={content}>
+            <div className={s.content}>
                 <Image src={back} alt={`background`} className={s.background}/>
                 <Header />
                 <Greetings/>
