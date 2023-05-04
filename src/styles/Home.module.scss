@@ -2,33 +2,27 @@ $landVilleGroup-primary: #264EB4;
 $lightGrey: #E0E0E0;
 
 
-.main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
+.content {
+  position: relative;
   width: 100%;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow: unset;
-  font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
-
+  z-index: 2;
 
   .background {
     position: fixed;
-    top: -20;
+    top: 0;
+    left: 0;
     max-width: 100%;
     width: 100%;
     height: auto;
     z-index: -1;
+    object-fit: cover;
   }
 }
 
 .disabled {
-  transition: 0.3s ease;
-  filter: blur(1.5px) brightness(80%);
+  overflow-y: hidden;
   max-height: 100%;
-  overflow: hidden;
 }
+
 
 

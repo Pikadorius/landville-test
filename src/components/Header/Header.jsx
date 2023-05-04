@@ -2,10 +2,14 @@ import React from 'react'
 import s from './Header.module.scss'
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
+import {useDispatch} from 'react-redux';
+import {setModal} from '../../store/modalSlice';
 
-const Header = ({showModal}) => {
+const Header = () => {
 
-    const openModal = () => showModal(true)
+    const dispatch = useDispatch()
+
+    const openModal = () => dispatch(setModal(true))
 
     return (
         <header className={s.header}>

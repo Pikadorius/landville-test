@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header/Header';
-import styles from '../styles/Home.module.scss'
+import s from '../styles/Home.module.scss'
 import Greetings from '../components/Greetings/Greetings';
 import Services from '../components/Services/Services';
 import React, {useState} from 'react';
@@ -8,20 +8,13 @@ import Partners from '../components/Partners/Partners';
 import Image from 'next/image';
 import back from '../assets/background.svg'
 import ModalWrapper from '../components/Modal/ModalWrapper';
+import { useSelector} from 'react-redux';
 
 export default function Home() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const showModal = () => {
-        setIsModalOpen(true);
-    };
-    const handleOk = () => {
-        setIsModalOpen(false);
-    };
-    const handleCancel = () => {
-        setIsModalOpen(false);
-    };
 
-    const container = isModalOpen ? `${styles.main} ${styles.disabled}` : styles.main
+    const isModalActive = useSelector(state=>state.modal);
+
+    const content = isModalActive ? `${s.content} ${s.disabled}` : s.content
 
     return (
         <>
@@ -32,14 +25,14 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <div className={container}>
-                <Image src={back} alt={`background`} className={styles.background}/>
-                <Header showModal={showModal}/>
+            <div className={content}>
+                <Image src={back} alt={`background`} className={s.background}/>
+                <Header />
                 <Greetings/>
                 <Services/>
-                <Partners showModal={showModal}/>
+                <Partners />
             </div>
-            {isModalOpen && <ModalWrapper closeModal={handleCancel} title={'Contact Us'}/>}
+            {isModalActive && <ModalWrapper title={'Contact Us'}/>}
         </>
     )
 }

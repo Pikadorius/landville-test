@@ -1,10 +1,13 @@
 import React from 'react';
 import s from './Partners.module.scss'
 import Button from '../Button/Button';
+import {useDispatch} from 'react-redux';
+import {setModal} from '../../store/modalSlice';
 
-const Partners = ({showModal}) => {
+const Partners = () => {
 
-    const openModal = () => showModal(true)
+    const dispatch = useDispatch()
+    const openModal = () => dispatch(setModal(true))
 
     return (
         <section className={s.container}>

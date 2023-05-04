@@ -3,8 +3,13 @@ import s from './Modal.module.scss'
 import Portal from '../Portal/Portal';
 import Image from 'next/image';
 import close from '../../assets/close.svg'
+import {useDispatch} from 'react-redux';
+import {setModal} from '../../store/modalSlice';
 
-const ModalWrapper = ({isModalOpen, closeModal, title}) => {
+const ModalWrapper = ({title}) => {
+
+    const dispatch = useDispatch()
+    const closeModal = () => dispatch(setModal(false))
 
     return (
         <Portal>
