@@ -3,18 +3,21 @@ import Header from '../components/Header/Header';
 import s from '../styles/Home.module.scss'
 import Greetings from '../components/Greetings/Greetings';
 import Services from '../components/Services/Services';
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import Partners from '../components/Partners/Partners';
 import Image from 'next/image';
 import back from '../assets/background.svg'
 import ModalWrapper from '../components/Modal/ModalWrapper';
-import { useSelector} from 'react-redux';
+import {useSelector} from 'react-redux';
 
 export default function Home() {
 
-    const isModalActive = useSelector(state=>state.modal);
+    const isModalActive = useSelector(state => state.modal);
+    console.log(isModalActive)
 
-    isModalActive ? document.body.style.overflow='hidden' : document.body.style.overflow='auto'
+    useEffect(() => {
+        isModalActive ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
+    }, [isModalActive])
 
     return (
         <>
@@ -27,10 +30,10 @@ export default function Home() {
 
             <div className={s.content}>
                 <Image src={back} alt={`background`} className={s.background}/>
-                <Header />
+                <Header/>
                 <Greetings/>
                 <Services/>
-                <Partners />
+                <Partners/>
             </div>
             {isModalActive && <ModalWrapper title={'Contact Us'}/>}
         </>

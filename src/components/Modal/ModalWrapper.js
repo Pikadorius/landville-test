@@ -16,7 +16,7 @@ const ModalWrapper = ({title}) => {
             <div className={s.container} onClick={closeModal}>
                 <div className={s.wrapper} onClick={(e) => e.stopPropagation()}>
                     <h2 className={s.title}>{title}</h2>
-                    <Image src={close} alt={'close'} width={12} height={12} className={s.closeBtn} onClick={closeModal}/>
+                    <Image src={close} alt={'close'} width={14} height={14} className={s.closeBtn} onClick={closeModal}/>
                 </div>
             </div>
         </Portal>
