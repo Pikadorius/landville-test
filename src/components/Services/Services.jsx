@@ -36,11 +36,40 @@ const Services = () => {
                     linkName={'Contact Us'}
                 />
 
-                <Card title={'Seeking a Fast Property Sale?'} description={'Effortlessly Sell Your Property and Receive a Direct, Fast Cash Offer with Our Streamlined Process'} background={fourth}/>
-                <Card title={'Get a Fantastic Deal'} description={'Search LandSupplier’s Wholesale Property Deals'} background={fifth}/>
-                <Card title={'Properties Marketplace'} description={'The Ultimate Platform Connecting Buyers and Sellers'} background={sixth}/>
-                <Card title={'Sell for Free'} description={'Begin Marketing Your Property at No Cost and Experience a Seamless Selling Journey'} background={seventh} noArrow={true} linkName={'Coming Soon...'} disabled={true}/>
-                <Card title={'Focused Audience Outreach'} description={'Acquire Cost-Effective, Targeted Leads at Unbeatable Prices in The Market'} background={eighth} noArrow={true} linkName={'Coming Soon...'} disabled={true}/>
+                <Card
+                    title={'Seeking a Fast Property Sale?'}
+                    description={'Effortlessly Sell Your Property and Receive a Direct, Fast Cash Offer with Our Streamlined Process'}
+                    background={fourth}
+                />
+
+                <Card
+                    title={'Get a Fantastic Deal'}
+                    description={'Search LandSupplier’s Wholesale Property Deals'}
+                    background={fifth}
+                />
+
+                <Card
+                    title={'Properties Marketplace'}
+                    description={'The Ultimate Platform Connecting Buyers and Sellers'}
+                    background={sixth}
+                />
+
+                <Card
+                    title={'Sell for Free'}
+                    description={'Begin Marketing Your Property at No Cost and Experience a Seamless Selling Journey'}
+                    background={seventh}
+                    linkName={'Coming Soon...'}
+                    disabled={true}
+                />
+
+                <Card
+                    title={'Focused Audience Outreach'}
+                    description={'Acquire Cost-Effective, Targeted Leads at Unbeatable Prices in The Market'}
+                    background={eighth}
+                    linkName={'Coming Soon...'}
+                    disabled={true}
+                />
+
             </div>
         </div>
     );
