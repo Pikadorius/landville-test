@@ -1,5 +1,5 @@
 .container {
-  font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,6 +39,85 @@
       margin: 22px 18px 0 0;
       top: 0;
       right: 0;
+    }
+
+    .form {
+      margin: 0 30px;
+    }
+
+    .fieldName {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+      text-align: left;
+
+      &:first-of-type {
+        margin-top: 24px;
+      }
+
+      .mark {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #264EB4;
+      }
+    }
+
+    .textarea {
+      color: #E0E0E0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 16px auto 30px;
+      height: 120px;
+      width: 480px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 6px;
+
+      &::placeholder {
+        color: #777777;
+      }
+
+
+      &:hover {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+      &:focus {
+        border-bottom: 2px solid #264EB4!important;
+      }
+    }
+
+    .btn {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-align: center;
+      border: none;
+
+      cursor: pointer;
+      outline: none;
+      margin: 0 auto;
+      height: 44px;
+      width: 480px;
+      border-radius: 4px;
+      padding: 10px 24px 10px 24px;
+      background: #264EB4;
+
+      &:hover {
+        background: #3A6AE3;
+      }
     }
   }
 }
