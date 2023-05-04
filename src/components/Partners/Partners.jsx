@@ -2,9 +2,12 @@ import React from 'react';
 import s from './Partners.module.scss'
 import Button from '../Button/Button';
 
-const Partners = () => {
+const Partners = ({showModal}) => {
+
+    const openModal = () => showModal(true)
+
     return (
-        <div className={s.container}>
+        <section className={s.container}>
             <div className={s.wrapper}>
                 <h3 className={s.title}>
                     Partner With Us and Thrive
@@ -12,14 +15,11 @@ const Partners = () => {
                 <p className={s.description}>
                     Join us to supercharge your real estate endeavors and achieve remarkable outcomes!
                 </p>
-                {/*<button type="button" className="button-contact" onClick={() => toggleMenus()}>*/}
-                {/*    Contact Us*/}
-                {/*</button>*/}
                 <div className={s.btnPlace}>
-                    <Button title={'Contact Us'} size={'large'} onClick={() => alert('CLICK')}/>
+                    <Button title={'Contact Us'} size={'large'} onClick={openModal}/>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

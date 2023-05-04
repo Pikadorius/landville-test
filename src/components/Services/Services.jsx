@@ -12,7 +12,7 @@ import Card from '../Card/Card';
 
 const Services = () => {
     return (
-        <div className={s.container}>
+        <section className={s.container}>
             <h2 className={s.title}>Our Services</h2>
             <p className={s.description}>Experience the advantages of partnering with our services and elevate your real estate journey</p>
             <div className={s.wrapper}>
@@ -71,7 +71,7 @@ const Services = () => {
                 />
 
             </div>
-        </div>
+        </section>
     );
 };
 

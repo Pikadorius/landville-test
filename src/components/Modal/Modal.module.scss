@@ -1,0 +1,43 @@
+.container {
+  font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+  word-break: break-word;
+
+  .wrapper {
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    position: relative;
+    height: 669px;
+    width: 540px;
+    margin-top: 205px;
+    border-radius: 12px;
+    background-color: #27282D;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0.01em;
+      text-align: center;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    }
+
+    .closeBtn {
+      position: absolute;
+      margin: 22px 18px 0 0;
+      top: 0;
+      right: 0;
+    }
+  }
+}

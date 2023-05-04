@@ -3,7 +3,10 @@ import s from './Header.module.scss'
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 
-const Header = () => {
+const Header = ({showModal}) => {
+
+    const openModal = () => showModal(true)
+
     return (
         <header className={s.header}>
             <Logo/>
@@ -12,7 +15,7 @@ const Header = () => {
                 <a>LandSupplier</a>
                 <a>LandVille</a>
             </nav>
-            <Button title={'Contact Us'} onClick={()=>alert('CLICK')} size={'medium'}/>
+            <Button title={'Contact Us'} onClick={openModal} size={'medium'}/>
         </header>
     );
 };
