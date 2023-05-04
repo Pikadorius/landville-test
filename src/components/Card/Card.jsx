@@ -1,11 +1,13 @@
 import React from 'react';
 import s from './Card.module.scss'
 import Image from 'next/image';
-import arrow from '../../assets/arrow.svg'
 
 const Card = (props) => {
+
+    const cardStyle = props.disabled ? `${s.container} ${s.disabled}` : s.container
+
     return (
-        <div className={s.container}>
+        <div className={cardStyle}>
             <Image src={props.background} alt={'back'} className={s.backPic}/>
             <p className={s.title}>{props.title}</p>
             <h3 className={s.description}>{props.description}</h3>
