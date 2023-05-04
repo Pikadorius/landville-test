@@ -38,8 +38,8 @@ export default function Home() {
                 <Greetings/>
                 <Services/>
                 <Partners showModal={showModal}/>
-                {isModalOpen && <ModalWrapper closeModal={handleCancel} title={'Contact Us'}/>}
             </div>
+            {isModalOpen && <ModalWrapper closeModal={handleCancel} title={'Contact Us'}/>}
         </>
     )
 }
