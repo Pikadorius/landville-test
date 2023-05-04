@@ -13,7 +13,7 @@ import Card2 from '../Card2/Card2';
 
 const Services = () => {
     return (
-        <section className={s.container} id={'services'}>
+        <section className={s.container}>
             <h2 className={s.title}>Our Services</h2>
             <p className={s.description}>Experience the advantages of partnering with our services and elevate your real estate journey</p>
             <div className={s.wrapper}>

@@ -6,10 +6,9 @@ import close from '../../assets/close.svg'
 import {useDispatch} from 'react-redux';
 import {setModal} from '../../store/modalSlice';
 import {Input} from 'antd';
-import Button from '../Button/Button';
 
 const ModalWrapper = ({title}) => {
-    const {TextArea}=Input;
+    const {TextArea} = Input;
 
     const dispatch = useDispatch()
     const closeModal = () => dispatch(setModal(false))

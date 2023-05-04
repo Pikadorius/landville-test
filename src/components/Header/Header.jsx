@@ -16,7 +16,7 @@ const Header = () => {
         <header className={s.header}>
             <Logo/>
             <nav className={s.links}>
-                <a href={'#services'}>Our Services</a>
+                <a>Our Services</a>
                 <a>LandSupplier</a>
                 <a>LandVille</a>
             </nav>
