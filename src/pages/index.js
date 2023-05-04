@@ -13,7 +13,6 @@ import {useSelector} from 'react-redux';
 export default function Home() {
 
     const isModalActive = useSelector(state => state.modal);
-    console.log(isModalActive)
 
     useEffect(() => {
         isModalActive ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'

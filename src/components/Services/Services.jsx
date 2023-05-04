@@ -9,6 +9,7 @@ import sixth from '../../assets/cards/card6.png'
 import seventh from '../../assets/cards/card7.png'
 import eighth from '../../assets/cards/card8.png'
 import Card from '../Card/Card';
+import Card2 from '../Card2/Card2';
 
 const Services = () => {
     return (
@@ -29,9 +30,9 @@ const Services = () => {
                     background={second}
                 />
 
-                <Card
-                    title={'Hello'}
-                    description={'asdasdasdasd dsad as das das d'}
+                <Card2
+                    title={'Real Estate Acquisitions Data'}
+                    description={'Acquire extensive real estate data, including homes, land, mobile homes, condos, and multi-family units. Access mailing addresses, emails, and phone numbers for effective outreach and connections.'}
                     background={third}
                     linkName={'Contact Us'}
                 />
