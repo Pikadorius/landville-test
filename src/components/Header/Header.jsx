@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import {useDispatch} from 'react-redux';
 import {setModal} from '../../store/modalSlice';
+import Link from 'next/link';
 
 const Header = () => {
 
@@ -15,7 +16,7 @@ const Header = () => {
         <header className={s.header}>
             <Logo/>
             <nav className={s.links}>
-                <a>Our Services</a>
+                <a href={'#services'}>Our Services</a>
                 <a>LandSupplier</a>
                 <a>LandVille</a>
             </nav>

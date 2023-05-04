@@ -7,8 +7,8 @@ import React, {useEffect} from 'react';
 import Partners from '../components/Partners/Partners';
 import Image from 'next/image';
 import back from '../assets/background.svg'
-import ModalWrapper from '../components/Modal/ModalWrapper';
 import {useSelector} from 'react-redux';
+import ModalWrapper from '../components/Modal/ModalWrapper';
 
 export default function Home() {
 
