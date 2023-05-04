@@ -1,12 +1,14 @@
 import React from 'react';
 import s from './Button.module.scss'
 
-const Button = (props) => {
+const Button = ({size, onClick, title}) => {
 
-    const btnSize = `${s.btn} + ${props.size === 'medium' ? `${s.medium}` : ''}`
+    const btnSize = `${s.btn} + ${size === 'medium' ? `${s.medium}` : ''}`
+
+    // large medium
 
     return (
-        <button className={btnSize} onClick={props.onClick}>{props.title}</button>
+        <button className={btnSize} onClick={onClick}>{title}</button>
     );
 };
 

@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 import Greetings from '../components/Greetings/Greetings';
 import Services from '../components/Services/Services';
 import React from 'react';
+import Partners from '../components/Partners/Partners';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function Home() {
           <Header/>
           <Greetings/>
           <Services/>
+          <Partners/>
       </main>
     </>
   )
