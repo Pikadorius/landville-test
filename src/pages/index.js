@@ -27,13 +27,13 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <div className={s.content}>
+            <Header/>
+            <main className={s.content}>
                 <Image src={back} alt={`background`} className={s.background}/>
-                <Header/>
                 <Greetings/>
                 <Services/>
                 <Partners/>
-            </div>
+            </main>
             {isModalActive && <ModalWrapper title={'Contact Us'}/>}
         </>
     )

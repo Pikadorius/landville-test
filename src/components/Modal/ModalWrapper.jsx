@@ -21,14 +21,18 @@ const ModalWrapper = ({title}) => {
                     <Image src={close} alt={'close'} width={14} height={14} className={s.closeBtn}
                            onClick={closeModal}/>
                     <form className={s.form}>
-                        <p className={s.fieldName}>Your Name <i className={s.mark}>*</i></p>
-                        <Input rootClassName={'antd-input'} placeholder={'Your Name'}/>
-                        <p className={s.fieldName}>Your Email <i className={s.mark}>*</i></p>
-                        <Input rootClassName={'antd-input'} placeholder={'Your Email'}/>
-                        <p className={s.fieldName}>Phone number</p>
-                        <Input rootClassName={'antd-input'} placeholder={'Your Phone'}/>
-                        <p className={s.fieldName}>Your Message</p>
-                        <TextArea placeholder={'Your Message'} className={s.textarea}/>
+                        <label className={s.fieldName}>Your Name <i className={s.mark}>*</i>
+                        <Input rootClassName={'antd-input'} placeholder={'Your Name'}/></label>
+
+                        <label className={s.fieldName}>Your Email <i className={s.mark}>*</i>
+                        <Input rootClassName={'antd-input'} placeholder={'Your Email'}/></label>
+
+                        <label className={s.fieldName}>Phone number
+                        <Input rootClassName={'antd-input'} placeholder={'Your Phone'}/></label>
+
+                        <label className={s.fieldName}>Your Message
+                        <TextArea placeholder={'Your Message'} className={s.textarea}/></label>
+
                         <button className={s.btn} type={'submit'}>Submit</button>
                     </form>
                 </div>
