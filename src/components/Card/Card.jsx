@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Card.module.scss'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Card = (props) => {
 
@@ -21,10 +22,14 @@ const Card = (props) => {
             <p className={s.title}>{title}</p>
             <h3 className={s.description}>{description}</h3>
             <div className={s.link}>
-                <a href={linkPath}>
-                    {linkName || 'Explore More'}
-                </a>
-                {!disabled && <span className={s.arrow}/>}
+                {
+                    !disabled
+                        ? <Link href={linkPath || '#'} target={'_blank'} className={s.fullLink}>
+                            {linkName || 'Explore More'}
+                            {<span className={s.arrow}/>}
+                        </Link>
+                        : <div>{linkName}</div>
+                }
             </div>
         </div>
     );

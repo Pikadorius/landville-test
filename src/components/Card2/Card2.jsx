@@ -1,8 +1,14 @@
 import React from 'react';
 import s from './Card2.module.scss'
 import Image from 'next/image';
+import Link from 'next/link';
+import {useDispatch} from 'react-redux';
+import {setModal} from '../../store/modalSlice';
 
 const Card2 = (props) => {
+    const dispatch = useDispatch()
+
+    const openModal = () => dispatch(setModal(true))
 
     const {
         title,
@@ -21,10 +27,10 @@ const Card2 = (props) => {
             <p className={s.title}>{title}</p>
             <h3 className={s.description}>{description}</h3>
             <div className={s.link}>
-                <a href={linkPath}>
+                <p className={s.fullLink} onClick={openModal}>
                     {linkName || 'Explore More'}
-                </a>
-                {!disabled && <span className={s.arrow}/>}
+                    {!disabled && <span className={s.arrow}/>}
+                </p>
             </div>
         </div>
     );

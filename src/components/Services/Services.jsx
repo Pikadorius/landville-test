@@ -21,6 +21,7 @@ const Services = () => {
                     title={'For Investors & Wholesalers'}
                     description={'Investor\'s Gateway to Lucrative Opportunities'}
                     background={first}
+                    linkPath={'https://landsupplier.com/partners'}
                 />
 
                 <Card
@@ -28,6 +29,7 @@ const Services = () => {
                     description={`Launch Your Successful Real Estate Venture \n` +
                     `for Under $300`}
                     background={second}
+                    linkPath={'https://webinar.landsupplier.com/'}
                 />
 
                 <Card2
@@ -41,18 +43,21 @@ const Services = () => {
                     title={'Seeking a Fast Property Sale?'}
                     description={'Effortlessly Sell Your Property and Receive a Direct, Fast Cash Offer with Our Streamlined Process'}
                     background={fourth}
+                    linkPath={'https://www.landville.com/sell-land'}
                 />
 
                 <Card
                     title={'Get a Fantastic Deal'}
                     description={'Search LandSupplier’s Wholesale Property Deals'}
                     background={fifth}
+                    linkPath={'https://landsupplier.com/'}
                 />
 
                 <Card
                     title={'Properties Marketplace'}
                     description={'The Ultimate Platform Connecting Buyers and Sellers'}
                     background={sixth}
+                    linkPath={'https://landville.com/'}
                 />
 
                 <Card

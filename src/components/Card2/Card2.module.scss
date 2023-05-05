@@ -45,13 +45,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     opacity: 0;
     transition: 0.2s linear;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
 
+    .fullLink {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
     .linkTitle {
       display: block;
